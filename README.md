@@ -38,7 +38,7 @@
 - IntelliJ IDEA (khuyến nghị dùng phiên bản có hỗ trợ GUI Designer)
 
 ## 📁 Cấu trúc thư mục
-
+```
 CarRentalSystem/
 │
 ├── README.md                      # Mô tả dự án
@@ -98,7 +98,7 @@ CarRentalSystem/
 └── docs/                                            # Tài liệu thiết kế, báo cáo, sơ đồ lớp
 ├── class-diagram.png
 └── database-schema.pdf
-
+```
 
 ## 🧪 Cách chạy chương trình
 
