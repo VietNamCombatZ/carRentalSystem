@@ -62,10 +62,10 @@ CarRentalSystem/
 │       │       │   ├── CarDAO.java
 │       │       │   └── RentalDAO.java
 │       │
-│       │       ├── service/                         # Tầng xử lý nghiệp vụ
-│       │       │   ├── UserService.java
-│       │       │   ├── CarService.java
-│       │       │   └── RentalService.java
+│       │       ├── controller/                         # Tầng xử lý nghiệp vụ
+│       │       │   ├── UserController.java
+│       │       │   ├── CarController.java
+│       │       │   └── RentalController.java
 │       │
 │       │       ├── ui/                              # Giao diện người dùng (Swing)
 │       │       │   ├── common/                      # Các thành phần dùng chung
