@@ -6,18 +6,18 @@ public class Car {
     private CarBrand brand;
     private CarStatus status;
     private double pricePerDay;
-    private String description;
+    private String carNumber;
 
 
     public Car() {
     }
-    public Car( String name, CarBrand brand, CarStatus status, double pricePerDay, String description) {
+    public Car( String name, CarBrand brand, CarStatus status, double pricePerDay, String carNumber) {
 
         this.name = name;
         this.brand = brand;
         this.status = status;
         this.pricePerDay = pricePerDay;
-        this.description = description;
+        this.carNumber = carNumber;
     }
 
     public int getId() {return id;}
@@ -35,6 +35,6 @@ public class Car {
     public double getPricePerDay() {return pricePerDay;}
     public void setPricePerDay(double pricePerDay) {this.pricePerDay = pricePerDay;}
 
-    public String getDescription() {return description;}
-    public void setDescription(String description) {this.description = description;}
+    public String getCarNumber() {return carNumber;}
+    public void setCarNumber(String carNumber) {this.carNumber = carNumber;}
 }

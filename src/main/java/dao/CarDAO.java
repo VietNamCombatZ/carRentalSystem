@@ -21,7 +21,7 @@ public class CarDAO {
                 car.setBrand(CarBrand.valueOf(rs.getString("brand")));
                 car.setStatus(CarStatus.valueOf(rs.getString("status")));
                 car.setPricePerDay(rs.getDouble("pricePerDay"));
-                car.setDescription(rs.getString("description"));
+                car.setCarNumber(rs.getString("description"));
                 cars.add(car);
             }
         } catch (Exception e) { e.printStackTrace(); }
@@ -36,7 +36,7 @@ public class CarDAO {
             stmt.setString(2, car.getBrand().name());
             stmt.setString(3, car.getStatus().name());
             stmt.setDouble(4, car.getPricePerDay());
-            stmt.setString(5, car.getDescription());
+            stmt.setString(5, car.getCarNumber());
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
             if(rs.next()){
@@ -58,7 +58,7 @@ public class CarDAO {
                 car.setBrand(CarBrand.valueOf(rs.getString("brand")));
                 car.setStatus(CarStatus.valueOf(rs.getString("status")));
                 car.setPricePerDay(rs.getDouble("price_per_day"));
-                car.setDescription(rs.getString("description"));
+                car.setCarNumber(rs.getString("carNumber"));
                 return car;
             }
         } catch (Exception e) { e.printStackTrace(); }
