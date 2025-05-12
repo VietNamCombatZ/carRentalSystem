@@ -9,6 +9,8 @@ public class Rental {
     private Date rentDate;
     private Date returnDate;
 
+//    private float pricePerDay;
+
     public Rental() {
     }
     public Rental( int userId, int carId, Date rentDate, Date returnDate) {
@@ -17,6 +19,7 @@ public class Rental {
         this.carId = carId;
         this.rentDate = rentDate;
         this.returnDate = returnDate;
+//        this.pricePerDay = pricePerDay;
     }
 
     public int getId(){return this.id;}
@@ -33,6 +36,9 @@ public class Rental {
 
     public Date getReturnDate(){return this.returnDate;}
     public void setReturnDate(Date returnDate){this.returnDate = returnDate;}
+//
+//    public float getPricePerDay(){return this.pricePerDay;}
+//    public void setPricePerDay(float pricePerDay){this.pricePerDay = pricePerDay;}
 
 
 }
